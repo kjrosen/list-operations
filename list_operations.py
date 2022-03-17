@@ -134,7 +134,8 @@ def replace_head(input_list):
 
     """
 
-    pass
+    input_list.pop(0)
+    input_list.insert(0,42)
 
 
 def replace_third_and_last(input_list):
@@ -151,7 +152,11 @@ def replace_third_and_last(input_list):
 
     """
 
-    pass
+    input_list.pop(2)
+    input_list.insert(2,37)
+
+    input_list.pop()
+    input_list.append(37)
 
 
 def replace_middle(input_list):
@@ -170,8 +175,10 @@ def replace_middle(input_list):
     [0, 3, 42, 37, 24, 27]
 
     """
+    # input_list.insert(2,42)
 
-    pass
+    # input_list.insert(3,37)
+    input_list[2:-2] = [42, 37]
 
 
 def delete_third_and_seventh(input_list):
@@ -188,7 +195,9 @@ def delete_third_and_seventh(input_list):
 
     """
 
-    pass
+    input_list.pop(2)
+    input_list.pop(5)
+
 
 
 def delete_middle(input_list):
@@ -207,4 +216,5 @@ def delete_middle(input_list):
 
     """
 
-    pass
+    input_list[2:-2] = ""
+  
